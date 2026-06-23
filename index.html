@@ -69,10 +69,9 @@
             margin-top: 15px;
             font-size: 14px;
             color: #555;
-            letter-spacing: 1px;
         }
 
-        /* WORK SHOWCASE */
+        /* WORK SECTION */
         .work-section {
             padding: 80px 20px;
             background: #f8f9fb;
@@ -81,7 +80,6 @@
 
         .work-section h2 {
             margin-bottom: 40px;
-            font-size: 26px;
             color: #222;
         }
 
@@ -98,15 +96,9 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-            transition: 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
         }
 
         .card h3 {
-            margin-top: 0;
             color: #0077cc;
         }
 
@@ -115,11 +107,75 @@
             color: #555;
         }
 
-        /* RESPONSIVE */
+        /* CONTACT FORM */
+        .contact-section {
+            padding: 80px 20px;
+            background: #f8f9fb;
+        }
+
+        .contact-section h2 {
+            text-align: center;
+            color: #0077cc;
+        }
+
+        .contact-section p {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .form-container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input, select, textarea {
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            background: #0077cc;
+            color: white;
+            border: none;
+            padding: 14px;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #005fa3;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #0b3d91;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
         @media (max-width: 600px) {
             nav {
                 flex-wrap: wrap;
-                gap: 15px;
+                gap: 10px;
             }
         }
     </style>
@@ -140,7 +196,6 @@
 <!-- HERO -->
 <section class="hero">
     <img src="WhatsApp Image 2026-06-08 at 10.38.46.jpeg" alt="Databolttz Logo">
-
     <div class="tagline">
         Uncovering the Story Behind Data for Evidence-Based Decisions
     </div>
@@ -151,68 +206,68 @@
     <h2>Our Work & Expertise</h2>
 
     <div class="grid">
-
         <div class="card">
             <h3>Statistical Analysis</h3>
-            <p>SPSS, R, and Stata analysis for academic and institutional research projects.</p>
+            <p>SPSS, R, Stata analysis for research and decision making.</p>
         </div>
 
         <div class="card">
             <h3>Research Support</h3>
-            <p>Proposal writing, thesis guidance, and dissertation structuring support.</p>
+            <p>Thesis, dissertation and proposal writing support.</p>
         </div>
 
         <div class="card">
             <h3>GIS Mapping</h3>
-            <p>Spatial data analysis and mapping for research and planning projects.</p>
+            <p>Spatial analysis and mapping solutions.</p>
         </div>
 
         <div class="card">
             <h3>Data Visualization</h3>
-            <p>Professional dashboards, charts, and reporting for decision making.</p>
+            <p>Dashboards, charts and reporting tools.</p>
         </div>
-
     </div>
 </section>
+
+<!-- CONTACT FORM -->
 <section class="contact-section">
     <h2>Request a Consultation</h2>
-    <p>
-        Tell us about your project or research needs and we will get back to you.
-    </p>
+    <p>Tell us about your project and we will get back to you.</p>
 
-    <form action="https://formsubmit.co/YOUR_EMAIL@gmail.com" method="POST">
+    <div class="form-container">
+        <form action="https://formsubmit.co/databoltclinic@gmail.com" method="POST">
 
-        <input type="text" name="Full Name" placeholder="Full Name" required>
+            <input type="hidden" name="_subject" value="New Databolttz Client Request">
+            <input type="hidden" name="_captcha" value="false">
 
-        <input type="email" name="Email" placeholder="Email Address" required>
+            <input type="text" name="Full Name" placeholder="Full Name" required>
+            <input type="email" name="Email" placeholder="Email Address" required>
+            <input type="tel" name="Phone" placeholder="Phone Number">
 
-        <input type="tel" name="Phone Number" placeholder="Phone Number">
+            <select name="Service Required" required>
+                <option value="">Select Service</option>
+                <option>Statistical Analysis</option>
+                <option>SPSS Analysis</option>
+                <option>R Analysis</option>
+                <option>Stata Analysis</option>
+                <option>GIS Mapping</option>
+                <option>Research Support</option>
+                <option>Data Visualization</option>
+            </select>
 
-        <select name="Service Required" required>
-            <option value="">Select Service</option>
-            <option>Research Proposal Development</option>
-            <option>Thesis & Dissertation Support</option>
-            <option>Statistical Analysis</option>
-            <option>SPSS Analysis</option>
-            <option>R Programming Analysis</option>
-            <option>Stata Analysis</option>
-            <option>GIS Mapping</option>
-            <option>Questionnaire Design</option>
-            <option>Data Collection</option>
-            <option>Training & Capacity Building</option>
-            <option>Other</option>
-        </select>
+            <input type="date" name="Preferred Date">
 
-        <input type="date" name="Preferred Appointment Date">
+            <textarea name="Project Description" rows="6"
+                placeholder="Describe your project..." required></textarea>
 
-        <textarea
-            name="Project Description"
-            rows="6"
-            placeholder="Describe your project, research topic, data analysis needs, or consultation request..."
-            required></textarea>
-
-        <button type="submit">Submit Request</button>
-
-    </form>
+            <button type="submit">Submit Request</button>
+        </form>
+    </div>
 </section>
+
+<!-- FOOTER -->
+<footer>
+    © 2026 Databolttz Research & Statistical Consulting Services
+</footer>
+
 </body>
+</html>
