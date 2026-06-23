@@ -122,3 +122,11 @@ footer {
     text-align: center;
     padding: 20px;
 }
+html {
+    scroll-padding-top: 80px;
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 80px;
+}
