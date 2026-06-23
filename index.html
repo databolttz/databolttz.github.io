@@ -9,31 +9,28 @@
 </head>
 
 <body>
-<h1 style="color:red; position:fixed; top:100px; z-index:9999;">
-TEST: NEW VERSION LOADED
-</h1>
+
 <!-- NAVIGATION -->
 <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="training.html">Training</a>
-    <a href="portfolio.html">Portfolio</a>
-    <a href="contact.html">Contact</a>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#training">Training</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
 </nav>
 
 <!-- HERO -->
-<section class="hero">
+<section id="home" class="hero">
     <img src="WhatsApp Image 2026-06-08 at 10.38.46.jpeg" alt="Databolttz Logo">
     <p class="tagline">Uncovering the Story Behind Data for Evidence-Based Decisions</p>
 </section>
 
-<!-- WORK SECTION -->
-<section class="work-section">
+<!-- ABOUT / WORK -->
+<section id="about" class="work-section">
     <h2>Our Work & Expertise</h2>
 
     <div class="grid">
-
         <div class="card">
             <h3>Statistical Analysis</h3>
             <p>SPSS, R, Stata data analysis for research and decision-making.</p>
@@ -53,17 +50,32 @@ TEST: NEW VERSION LOADED
             <h3>Data Visualization</h3>
             <p>Dashboards, charts, and reporting for insights.</p>
         </div>
-
     </div>
 </section>
 
-<!-- CONTACT FORM -->
-<section class="contact-section">
+<!-- SERVICES (placeholder section) -->
+<section id="services" class="work-section">
+    <h2>Services</h2>
+    <p>Professional research and statistical consulting services.</p>
+</section>
+
+<!-- TRAINING -->
+<section id="training" class="work-section">
+    <h2>Training</h2>
+    <p>We offer SPSS, R, Stata, and research methodology training.</p>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" class="work-section">
+    <h2>Portfolio</h2>
+    <p>Sample projects and completed research work.</p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact-section">
     <h2>Request a Consultation</h2>
-    <p>Tell us your project details and we will respond shortly.</p>
 
     <div class="form-container">
-
         <form action="https://formsubmit.co/databoltclinic@gmail.com" method="POST">
 
             <input type="hidden" name="_subject" value="New Databolttz Client Request">
@@ -91,7 +103,6 @@ TEST: NEW VERSION LOADED
             <button type="submit">Submit Request</button>
 
         </form>
-
     </div>
 </section>
 
