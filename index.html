@@ -3,183 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Databolttz Research</title>
 
-    <body>
-
-<h1 style="color:red;">FORM VERSION TEST</h1>
-
-<!-- NAVIGATION -->
-<nav>
-    <a href="index.html">Home</a>
-
-        /* NAVIGATION */
-        nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            gap: 25px;
-            padding: 15px 10px;
-            background: rgba(255, 255, 255, 0.9);
-            backdrop-filter: blur(8px);
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            z-index: 1000;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-            font-size: 14px;
-        }
-
-        nav a:hover {
-            color: #0077cc;
-        }
-
-        /* HERO SECTION */
-        .hero {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding-top: 60px;
-        }
-
-        .hero img {
-            width: 100%;
-            height: 100%;
-            max-width: 450px;
-            max-height: 350px;
-            object-fit: contain;
-            animation: fadeIn 1.5s ease-in-out;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: scale(0.98); }
-            to { opacity: 1; transform: scale(1); }
-        }
-
-        .tagline {
-            margin-top: 15px;
-            font-size: 14px;
-            color: #555;
-        }
-
-        /* WORK SECTION */
-        .work-section {
-            padding: 80px 20px;
-            background: #f8f9fb;
-            text-align: center;
-        }
-
-        .work-section h2 {
-            margin-bottom: 40px;
-            color: #222;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            max-width: 1100px;
-            margin: auto;
-        }
-
-        .card {
-            background: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-        }
-
-        .card h3 {
-            color: #0077cc;
-        }
-
-        .card p {
-            font-size: 14px;
-            color: #555;
-        }
-
-        /* CONTACT FORM */
-        .contact-section {
-            padding: 80px 20px;
-            background: #f8f9fb;
-        }
-
-        .contact-section h2 {
-            text-align: center;
-            color: #0077cc;
-        }
-
-        .contact-section p {
-            text-align: center;
-            color: #666;
-            margin-bottom: 30px;
-        }
-
-        .form-container {
-            max-width: 800px;
-            margin: auto;
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-        }
-
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        input, select, textarea {
-            padding: 12px;
-            border: 1px solid #ddd;
-            border-radius: 6px;
-            font-size: 15px;
-        }
-
-        textarea {
-            resize: vertical;
-        }
-
-        button {
-            background: #0077cc;
-            color: white;
-            border: none;
-            padding: 14px;
-            border-radius: 6px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background: #005fa3;
-        }
-
-        /* FOOTER */
-        footer {
-            background: #0b3d91;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        @media (max-width: 600px) {
-            nav {
-                flex-wrap: wrap;
-                gap: 10px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -197,44 +23,45 @@
 <!-- HERO -->
 <section class="hero">
     <img src="WhatsApp Image 2026-06-08 at 10.38.46.jpeg" alt="Databolttz Logo">
-    <div class="tagline">
-        Uncovering the Story Behind Data for Evidence-Based Decisions
-    </div>
+    <p class="tagline">Uncovering the Story Behind Data for Evidence-Based Decisions</p>
 </section>
 
-<!-- WORK SHOWCASE -->
+<!-- WORK SECTION -->
 <section class="work-section">
     <h2>Our Work & Expertise</h2>
 
     <div class="grid">
+
         <div class="card">
             <h3>Statistical Analysis</h3>
-            <p>SPSS, R, Stata analysis for research and decision making.</p>
+            <p>SPSS, R, Stata data analysis for research and decision-making.</p>
         </div>
 
         <div class="card">
             <h3>Research Support</h3>
-            <p>Thesis, dissertation and proposal writing support.</p>
+            <p>Thesis, dissertation, proposal writing and academic support.</p>
         </div>
 
         <div class="card">
             <h3>GIS Mapping</h3>
-            <p>Spatial analysis and mapping solutions.</p>
+            <p>Spatial analysis and geospatial visualization solutions.</p>
         </div>
 
         <div class="card">
             <h3>Data Visualization</h3>
-            <p>Dashboards, charts and reporting tools.</p>
+            <p>Dashboards, charts, and reporting for insights.</p>
         </div>
+
     </div>
 </section>
 
 <!-- CONTACT FORM -->
 <section class="contact-section">
     <h2>Request a Consultation</h2>
-    <p>Tell us about your project and we will get back to you.</p>
+    <p>Tell us your project details and we will respond shortly.</p>
 
     <div class="form-container">
+
         <form action="https://formsubmit.co/databoltclinic@gmail.com" method="POST">
 
             <input type="hidden" name="_subject" value="New Databolttz Client Request">
@@ -257,17 +84,17 @@
 
             <input type="date" name="Preferred Date">
 
-            <textarea name="Project Description" rows="6"
-                placeholder="Describe your project..." required></textarea>
+            <textarea name="Project Description" rows="6" placeholder="Describe your project..." required></textarea>
 
             <button type="submit">Submit Request</button>
+
         </form>
+
     </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
-    © 2026 Databolttz Research & Statistical Consulting Services
+    © 2026 Databolttz Research & Statistical Consulting
 </footer>
 
 </body>
