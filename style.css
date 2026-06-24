@@ -7,42 +7,24 @@ body {
         radial-gradient(circle at bottom right, rgba(244,197,66,0.15), transparent 40%),
         #f6f7f9;
 
-    color: #111111;
+    color: #111;
 }
 
-/* =========================
-   CONTAINER (FIXED MARGINS)
-========================= */
-.home-container {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    gap: 20px;
-
-    /* 👇 THIS FIXES YOUR PROBLEM */
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 100px 20px 30px;
-}
-
-/* =========================
-   NAV
-========================= */
+/* NAV */
 .top-nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background: #111111;
+    background: #111;
     padding: 12px;
-    display: flex;
-    justify-content: center;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    text-align: center;
     z-index: 1000;
 }
 
 .top-nav a {
-    margin: 0 12px;
-    text-decoration: none;
     color: #f4c542;
+    margin: 0 10px;
+    text-decoration: none;
     font-weight: bold;
 }
 
@@ -50,37 +32,52 @@ body {
     color: #6ee7a5;
 }
 
-/* =========================
-   BOXES
-========================= */
+/* LAYOUT (FIXED CENTERING) */
+.home-container {
+    display: grid;
+    grid-template-columns: 280px 1fr 280px;
+    gap: 25px;
+
+    max-width: 1300px;
+    margin: 0 auto;
+
+    padding: 100px 20px 40px;
+}
+
+/* PANELS */
+.side-panel {
+    position: sticky;
+    top: 90px;
+}
+
+.center-panel {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* BOXES */
 .box {
-    background: white;
+    background: #fff;
     padding: 15px;
     border-radius: 10px;
     margin-bottom: 15px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     border-left: 4px solid #f4c542;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
-/* =========================
-   CENTER PANEL
-========================= */
-.center-panel {
-    text-align: center;
-}
-
+/* CENTER */
 .hero-logo {
-    width: 80%;
-    max-width: 300px;
+    width: 100%;
+    max-width: 280px;
 }
 
 .tagline {
     color: #444;
 }
 
-/* =========================
-   COUNTERS
-========================= */
+/* STATS */
 .stats-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -91,38 +88,31 @@ body {
 .stat-box {
     background: white;
     padding: 15px;
-    border-radius: 10px;
     border-left: 4px solid #6ee7a5;
+    border-radius: 10px;
 }
 
-/* =========================
-   GALLERY
-========================= */
+/* GALLERY */
 .gallery-img {
     width: 100%;
     margin-bottom: 10px;
     border-radius: 8px;
 }
 
-/* =========================
-   WHATSAPP BUTTON
-========================= */
+/* WHATSAPP */
 .whatsapp-btn {
     position: fixed;
     bottom: 20px;
     right: 20px;
     background: #6ee7a5;
-    color: #111111;
+    color: #111;
     padding: 12px 15px;
     border-radius: 50px;
     text-decoration: none;
     font-weight: bold;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-/* =========================
-   QUICK LINKS
-========================= */
+/* LINKS */
 .quick-links a {
     display: block;
     margin: 5px 0;
@@ -130,39 +120,22 @@ body {
     text-decoration: none;
 }
 
-.quick-links a:hover {
-    color: #6ee7a5;
-}
-
-/* =========================
-   VISITOR COUNTER
-========================= */
-.visitor-box img {
-    width: 100%;
-    margin-top: 10px;
-}
-
-/* =========================
-   FOOTER
-========================= */
 footer {
     text-align: center;
     padding: 15px;
-    background: #111111;
+    background: #111;
     color: #f4c542;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
-/* =========================
-   RESPONSIVE (IMPORTANT)
-========================= */
+/* RESPONSIVE */
 @media (max-width: 900px) {
     .home-container {
         grid-template-columns: 1fr;
-        padding: 90px 15px;
     }
 
-    .stats-section {
-        grid-template-columns: 1fr;
+    .side-panel {
+        position: relative;
+        top: auto;
     }
 }
