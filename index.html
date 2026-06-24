@@ -8,7 +8,35 @@
 
 <link rel="stylesheet" href="style.css">
 </head>
+<script>
 
+/* EVENT MESSAGES */
+
+function showNoEvent(item){
+
+    alert(
+        item +
+        ":\n\nCurrently there are no active announcements.\n\nStay tuned for updates."
+    );
+
+}
+
+/* SIMPLE VISITOR COUNTER */
+
+let count = localStorage.getItem("dbVisitors");
+
+if(!count){
+    count = 1;
+}else{
+    count = parseInt(count) + 1;
+}
+
+localStorage.setItem("dbVisitors", count);
+
+document.getElementById("visitorCount").innerHTML =
+"Visits From This Device: " + count;
+
+</script>
 <body>
 
 <!-- TOP NAVIGATION -->
@@ -159,6 +187,14 @@
 ```
 
 </div>
+<a
+href="https://wa.me/255772519788"
+class="whatsapp-btn"
+target="_blank">
+
+💬 Chat With Us
+
+</a>
 
 <footer>
 © 2026 Databolttz Research & Statistical Consulting Services
