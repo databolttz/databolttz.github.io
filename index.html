@@ -29,21 +29,22 @@ function showNoEvent(item){
     );
 
 }
+<div class="box">
 
-/* SIMPLE VISITOR COUNTER */
+    <h3>👥 Website Visitors</h3>
 
-let count = localStorage.getItem("dbVisitors");
+    <a href="https://visitorbadge.io/status?path=https%3A%2F%2Fdatabolttz.github.io%2F"
+       target="_blank">
 
-if(!count){
-    count = 1;
-}else{
-    count = parseInt(count) + 1;
-}
+        <img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fdatabolttz.github.io%2F&countColor=%23263759"
+             alt="Visitor Counter">
 
-localStorage.setItem("dbVisitors", count);
+    </a>
 
-document.getElementById("visitorCount").innerHTML =
-"Visits From This Device: " + count;
+    <p>Thank you for visiting Databolttz Research & Statistical Consulting Services.</p>
+
+</div>
+
 
 </script>
 <body>
