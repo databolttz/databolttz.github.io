@@ -286,3 +286,17 @@ z-index:9999;
     font-size: 20px;
     cursor: pointer;
 }
+.box img {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+}
+
+.box h3 {
+    text-align: center;
+}
+
+.box p {
+    text-align: center;
+    font-size: 14px;
+}
