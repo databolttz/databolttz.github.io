@@ -28,24 +28,79 @@
 
 ```
 <!-- LEFT PANEL -->
+
 <aside class="side-panel">
 
-    <div class="box">
-        <h3>📅 Calendar</h3>
-        <p>June 2026</p>
-        <p>• Consultation bookings</p>
-        <p>• Research project timelines</p>
-        <p>• Training schedules</p>
-    </div>
+```
+<!-- VISITOR COUNTER -->
+<div class="box">
+    <h3>👥 Visitors</h3>
+    <p id="visitorCount">Loading...</p>
+</div>
 
-    <div class="box">
-        <h3>📰 News & Events</h3>
-        <p>• SPSS Training Program Open</p>
-        <p>• GIS Mapping Workshop Coming Soon</p>
-        <p>• Data Analytics Consultation Available</p>
-    </div>
+<!-- CALENDAR -->
+<div class="box">
+    <h3>📅 Calendar & Activities</h3>
+
+    <p>
+        <a href="#" onclick="showNoEvent('Training Sessions')">
+            Training Sessions
+        </a>
+    </p>
+
+    <p>
+        <a href="#" onclick="showNoEvent('Workshops')">
+            Workshops
+        </a>
+    </p>
+
+    <p>
+        <a href="#" onclick="showNoEvent('Consultation Bookings')">
+            Consultation Bookings
+        </a>
+    </p>
+
+    <p>
+        <a href="#" onclick="showNoEvent('Research Seminars')">
+            Research Seminars
+        </a>
+    </p>
+
+</div>
+
+<!-- NEWS -->
+<div class="box">
+    <h3>📰 News & Events</h3>
+
+    <p>
+        <a href="#" onclick="showNoEvent('SPSS Training')">
+            SPSS Training
+        </a>
+    </p>
+
+    <p>
+        <a href="#" onclick="showNoEvent('GIS Workshop')">
+            GIS Workshop
+        </a>
+    </p>
+
+    <p>
+        <a href="#" onclick="showNoEvent('Data Analytics Event')">
+            Data Analytics Event
+        </a>
+    </p>
+
+    <p>
+        <a href="#" onclick="showNoEvent('Research Opportunities')">
+            Research Opportunities
+        </a>
+    </p>
+
+</div>
+```
 
 </aside>
+
 
 <!-- CENTER PANEL -->
 <main class="center-panel">
