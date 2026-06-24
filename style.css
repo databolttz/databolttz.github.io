@@ -139,3 +139,28 @@ margin-top: 30px;
 ```
 
 }
+/* CLICKABLE LINKS */
+
+.box a{
+text-decoration:none;
+color:#0b3d91;
+font-weight:bold;
+}
+
+.box a:hover
+
+/* WHATSAPP BUTTON */
+
+.whatsapp-btn{
+position:fixed;
+right:20px;
+bottom:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 2px 10px rgba(0,0,0,0.2);
+z-index:9999;
+}
