@@ -305,7 +305,26 @@ counters.forEach(counter => {
     </div>
 
 </div>
+<script>
 
+function register(course) {
+    document.getElementById("registerModal").style.display = "block";
+    document.getElementById("courseTitle").innerText = "Register for " + course;
+    document.getElementById("courseInput").value = course;
+}
+
+function closeForm() {
+    document.getElementById("registerModal").style.display = "none";
+}
+
+window.onclick = function(event) {
+    let modal = document.getElementById("registerModal");
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+</script>
     
 </body>
 </html>
