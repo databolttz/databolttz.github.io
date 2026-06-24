@@ -42,17 +42,72 @@
     </aside>
 
     <!-- CENTER LOGO -->
-    <main class="center-panel">
+<main class="center-panel">
 
-        <img src="WhatsApp Image 2026-06-08 at 10.38.46.jpeg" class="hero-logo">
+    <img src="WhatsApp Image 2026-06-08 at 10.38.46.jpeg" class="hero-logo">
 
-        <h1>Databolttz Research & Statistical Consulting</h1>
+    <h1>Databolttz Research & Statistical Consulting</h1>
 
-        <p class="tagline">
-            Transforming data into meaningful insights for evidence-based decision making
-        </p>
+    <p class="tagline">
+        Transforming data into meaningful insights for evidence-based decision making
+    </p>
 
-    </main>
+    <!-- ANIMATED COUNTERS -->
+    <section class="stats-section">
+
+        <div class="stat-box">
+            <h2 class="counter" data-target="500">0</h2>
+            <p>Projects Supported</p>
+        </div>
+
+        <div class="stat-box">
+            <h2 class="counter" data-target="1000">0</h2>
+            <p>Datasets Analyzed</p>
+        </div>
+
+        <div class="stat-box">
+            <h2 class="counter" data-target="200">0</h2>
+            <p>Clients Served</p>
+        </div>
+
+        <div class="stat-box">
+            <h2 class="counter" data-target="50">0</h2>
+            <p>Training Sessions</p>
+        </div>
+
+    </section>
+
+</main>
+    <script>
+
+const counters = document.querySelectorAll('.counter');
+
+counters.forEach(counter => {
+
+    const updateCounter = () => {
+
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText;
+
+        const increment = target / 100;
+
+        if (count < target) {
+
+            counter.innerText = Math.ceil(count + increment);
+
+            setTimeout(updateCounter, 20);
+
+        } else {
+
+            counter.innerText = target;
+
+        }
+    };
+
+    updateCounter();
+});
+
+</script>
 
     <!-- RIGHT PANEL -->
     <aside class="side-panel right-panel">
