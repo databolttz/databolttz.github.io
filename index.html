@@ -1,58 +1,66 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Databolttz | Home</title>
+
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <!-- TOP NAVIGATION -->
+
 <nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="services.html">Services</a>
-<a href="training.html">Training</a>
-<a href="portfolio.html">Portfolio</a>
-<a href="contact.html">Contact</a>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="training.html">Training</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
 </nav>
 
 <!-- MAIN LAYOUT -->
+
 <div class="home-container">
 
-    <!-- LEFT PANEL -->
-    <aside class="side-panel left-panel">
+```
+<!-- LEFT PANEL -->
+<aside class="side-panel">
 
-        <div class="box">
-            <h3>📅 Calendar</h3>
-            <p>June 2026</p>
-            <p>• Project deadlines</p>
-            <p>• Training sessions</p>
-            <p>• Consultation bookings</p>
-        </div>
+    <div class="box">
+        <h3>📅 Calendar</h3>
+        <p>June 2026</p>
+        <p>• Consultation bookings</p>
+        <p>• Research project timelines</p>
+        <p>• Training schedules</p>
+    </div>
 
-        <div class="box">
-            <h3>📰 News & Events</h3>
-            <p>• New SPSS training program launched</p>
-            <p>• GIS workshop coming soon</p>
-            <p>• Data Science consultation open</p>
-        </div>
+    <div class="box">
+        <h3>📰 News & Events</h3>
+        <p>• SPSS Training Program Open</p>
+        <p>• GIS Mapping Workshop Coming Soon</p>
+        <p>• Data Analytics Consultation Available</p>
+    </div>
 
-    </aside>
+</aside>
 
-    <!-- CENTER LOGO -->
+<!-- CENTER PANEL -->
 <main class="center-panel">
 
-    <img src="WhatsApp Image 2026-06-08 at 10.38.46.jpeg" class="hero-logo">
+    <img src="WhatsApp Image 2026-06-08 at 10.38.46.jpeg"
+         alt="Databolttz Logo"
+         class="hero-logo">
 
-    <h1>Databolttz Research & Statistical Consulting</h1>
+    <h1>Databolttz Research & Statistical Consulting Services</h1>
 
     <p class="tagline">
         Transforming data into meaningful insights for evidence-based decision making
     </p>
 
-    <!-- ANIMATED COUNTERS -->
+    <!-- COUNTERS -->
     <section class="stats-section">
 
         <div class="stat-box">
@@ -78,7 +86,30 @@
     </section>
 
 </main>
-    <script>
+
+<!-- RIGHT PANEL -->
+<aside class="side-panel">
+
+    <div class="box">
+
+        <h3>🖼 Gallery</h3>
+
+        <img src="WhatsApp Image 2026-06-08 at 10.38.46.jpeg" class="gallery-img">
+        <img src="WhatsApp Image 2026-06-08 at 10.38.46.jpeg" class="gallery-img">
+        <img src="WhatsApp Image 2026-06-08 at 10.38.46.jpeg" class="gallery-img">
+
+    </div>
+
+</aside>
+```
+
+</div>
+
+<footer>
+© 2026 Databolttz Research & Statistical Consulting Services
+</footer>
+
+<script>
 
 const counters = document.querySelectorAll('.counter');
 
@@ -105,30 +136,10 @@ counters.forEach(counter => {
     };
 
     updateCounter();
+
 });
 
 </script>
-
-    <!-- RIGHT PANEL -->
-    <aside class="side-panel right-panel">
-
-        <div class="box">
-            <h3>🖼 Gallery Pot</h3>
-
-            <img src="WhatsApp Image 2026-06-08 at 10.38.46.jpeg" class="gallery-img">
-            <img src="WhatsApp Image 2026-06-08 at 10.38.46.jpeg" class="gallery-img">
-            <img src="WhatsApp Image 2026-06-08 at 10.38.46.jpeg" class="gallery-img">
-
-        </div>
-
-    </aside>
-
-</div>
-
-<!-- FOOTER -->
-<footer>
-© 2026 Databolttz Research & Statistical Consulting
-</footer>
 
 </body>
 </html>
