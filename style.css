@@ -164,3 +164,44 @@ font-weight:bold;
 box-shadow:0 2px 10px rgba(0,0,0,0.2);
 z-index:9999;
 }
+/* NAV LAYOUT SPLIT */
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 12px 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-left a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: #0b3d91;
+    font-weight: bold;
+}
+
+.nav-left a:hover {
+    color: #ff6600;
+}
+
+/* CHART BOX */
+
+.chart-box {
+    background: #0b3d91;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.chart-box:hover {
+    background: #1565c0;
+}
