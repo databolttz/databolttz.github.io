@@ -3,116 +3,147 @@ body {
     font-family: Arial, sans-serif;
 
     background:
-        radial-gradient(circle at top left, rgba(110,231,165,0.15), transparent 40%),
-        radial-gradient(circle at bottom right, rgba(244,197,66,0.15), transparent 40%),
+        radial-gradient(circle at top left, rgba(110,231,165,0.12), transparent 45%),
+        radial-gradient(circle at top right, rgba(244,197,66,0.12), transparent 45%),
         #f6f7f9;
 
     color: #111;
+    overflow-x: hidden;
 }
 
-/* NAV */
+/* =========================
+   NAVIGATION
+========================= */
 .top-nav {
     position: fixed;
     top: 0;
     width: 100%;
     background: #111;
-    padding: 12px;
-    text-align: center;
+    padding: 12px 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
     z-index: 1000;
 }
 
 .top-nav a {
     color: #f4c542;
-    margin: 0 10px;
     text-decoration: none;
     font-weight: bold;
+    font-size: 14px;
 }
 
 .top-nav a:hover {
     color: #6ee7a5;
 }
 
-/* LAYOUT (FIXED CENTERING) */
+/* =========================
+   MAIN WRAPPER (KEY FIX)
+========================= */
 .home-container {
     display: grid;
-    grid-template-columns: 280px 1fr 280px;
+
+    /* Balanced layout (fixes left/right empty feel) */
+    grid-template-columns: 280px minmax(500px, 1fr) 280px;
+
     gap: 25px;
 
-    max-width: 1300px;
+    /* IMPORTANT: centers whole site */
+    max-width: 1200px;
     margin: 0 auto;
 
-    padding: 100px 20px 40px;
+    padding: 110px 20px 40px;
+
+    align-items: start;
 }
 
-/* PANELS */
+/* =========================
+   SIDE PANELS
+========================= */
 .side-panel {
     position: sticky;
     top: 90px;
 }
 
+/* =========================
+   CENTER PANEL (TRUE CENTER FIX)
+========================= */
 .center-panel {
     text-align: center;
+
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    justify-content: flex-start;
+
+    padding: 0 10px;
 }
 
-/* BOXES */
+/* =========================
+   BOX STYLE
+========================= */
 .box {
     background: #fff;
     padding: 15px;
-    border-radius: 10px;
+    border-radius: 12px;
+
     margin-bottom: 15px;
+
     border-left: 4px solid #f4c542;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
 }
 
-/* CENTER */
+/* =========================
+   HERO LOGO
+========================= */
 .hero-logo {
     width: 100%;
     max-width: 280px;
+    border-radius: 10px;
 }
 
+/* =========================
+   TAGLINE
+========================= */
 .tagline {
     color: #444;
+    margin-top: 10px;
 }
 
-/* STATS */
+/* =========================
+   COUNTERS
+========================= */
 .stats-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 12px;
     margin-top: 20px;
+    width: 100%;
 }
 
 .stat-box {
     background: white;
     padding: 15px;
-    border-left: 4px solid #6ee7a5;
     border-radius: 10px;
+    border-left: 4px solid #6ee7a5;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
-/* GALLERY */
+/* =========================
+   GALLERY
+========================= */
 .gallery-img {
     width: 100%;
-    margin-bottom: 10px;
     border-radius: 8px;
+    margin-bottom: 10px;
 }
 
-/* WHATSAPP */
-.whatsapp-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #6ee7a5;
-    color: #111;
-    padding: 12px 15px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* LINKS */
+/* =========================
+   QUICK LINKS
+========================= */
 .quick-links a {
     display: block;
     margin: 5px 0;
@@ -120,22 +151,58 @@ body {
     text-decoration: none;
 }
 
+.quick-links a:hover {
+    color: #6ee7a5;
+}
+
+/* =========================
+   WHATSAPP BUTTON
+========================= */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    background: #6ee7a5;
+    color: #111;
+
+    padding: 12px 15px;
+    border-radius: 50px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* =========================
+   FOOTER
+========================= */
 footer {
     text-align: center;
     padding: 15px;
+
     background: #111;
     color: #f4c542;
-    margin-top: 20px;
+
+    margin-top: 30px;
 }
 
-/* RESPONSIVE */
+/* =========================
+   RESPONSIVE FIX
+========================= */
 @media (max-width: 900px) {
     .home-container {
         grid-template-columns: 1fr;
+        padding: 90px 15px;
     }
 
     .side-panel {
         position: relative;
         top: auto;
+    }
+
+    .stats-section {
+        grid-template-columns: 1fr;
     }
 }
