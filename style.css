@@ -18,12 +18,16 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
+
     background: #111;
     padding: 12px 10px;
+
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
+
+    gap: 12px;
+
     z-index: 1000;
 }
 
@@ -39,18 +43,17 @@ body {
 }
 
 /* =========================
-   MAIN WRAPPER (KEY FIX)
+   MAIN LAYOUT (FIXED BALANCE CORE)
 ========================= */
 .home-container {
     display: grid;
 
-    /* Balanced layout (fixes left/right empty feel) */
-    grid-template-columns: 280px minmax(500px, 1fr) 280px;
+    /* IMPORTANT FIX: better center dominance */
+    grid-template-columns: 260px minmax(650px, 1fr) 260px;
 
-    gap: 25px;
+    gap: 30px;
 
-    /* IMPORTANT: centers whole site */
-    max-width: 1200px;
+    max-width: 1250px;
     margin: 0 auto;
 
     padding: 110px 20px 40px;
@@ -64,6 +67,9 @@ body {
 .side-panel {
     position: sticky;
     top: 90px;
+
+    /* prevents weird stretching feel */
+    align-self: start;
 }
 
 /* =========================
@@ -87,6 +93,7 @@ body {
 .box {
     background: #fff;
     padding: 15px;
+
     border-radius: 12px;
 
     margin-bottom: 15px;
@@ -97,29 +104,40 @@ body {
 }
 
 /* =========================
-   HERO LOGO
+   HERO LOGO (CENTER STABILITY FIX)
 ========================= */
 .hero-logo {
     width: 100%;
-    max-width: 280px;
+    max-width: 300px;
+
+    display: block;
+    margin: 0 auto;
+
     border-radius: 10px;
 }
 
 /* =========================
-   TAGLINE
+   TITLE + TAGLINE
 ========================= */
+h1 {
+    margin-top: 15px;
+    font-size: 22px;
+}
+
 .tagline {
     color: #444;
-    margin-top: 10px;
+    margin-top: 6px;
 }
 
 /* =========================
-   COUNTERS
+   COUNTERS (CENTER STABILITY FIX)
 ========================= */
 .stats-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+
     gap: 12px;
+
     margin-top: 20px;
     width: 100%;
 }
@@ -127,8 +145,11 @@ body {
 .stat-box {
     background: white;
     padding: 15px;
+
     border-radius: 10px;
+
     border-left: 4px solid #6ee7a5;
+
     box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
@@ -147,6 +168,7 @@ body {
 .quick-links a {
     display: block;
     margin: 5px 0;
+
     color: #0b3d91;
     text-decoration: none;
 }
@@ -172,7 +194,9 @@ body {
     text-decoration: none;
     font-weight: bold;
 
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+
+    z-index: 9999;
 }
 
 /* =========================
@@ -189,11 +213,12 @@ footer {
 }
 
 /* =========================
-   RESPONSIVE FIX
+   RESPONSIVE DESIGN (FIXED)
 ========================= */
 @media (max-width: 900px) {
     .home-container {
         grid-template-columns: 1fr;
+
         padding: 90px 15px;
     }
 
