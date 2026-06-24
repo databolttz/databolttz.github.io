@@ -205,3 +205,13 @@ z-index:9999;
 .chart-box:hover {
     background: #1565c0;
 }
+.gallery-img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: 0.3s ease;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+}
