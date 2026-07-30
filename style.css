@@ -914,3 +914,198 @@ display:flex;
 
 
 }
+/* ======================================
+   CONSULTATION FORM DESIGN
+====================================== */
+
+
+.consultation-section {
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:40px;
+
+max-width:1200px;
+
+margin:120px auto 40px;
+
+padding:30px;
+
+}
+
+
+
+.consultation-intro {
+
+
+background:#0B3D91;
+
+color:white;
+
+padding:40px;
+
+border-radius:20px;
+
+
+}
+
+
+
+.consultation-intro h1 {
+
+font-size:38px;
+
+}
+
+
+
+.contact-details {
+
+
+margin-top:40px;
+
+background:white;
+
+color:#111;
+
+padding:25px;
+
+border-radius:15px;
+
+}
+
+
+
+
+.form-card {
+
+
+background:white;
+
+padding:40px;
+
+border-radius:20px;
+
+
+box-shadow:
+
+0 10px 30px rgba(0,0,0,.12);
+
+
+}
+
+
+
+
+.form-card h2 {
+
+
+color:#0B3D91;
+
+margin-bottom:25px;
+
+
+}
+
+
+
+.form-card label {
+
+
+font-weight:bold;
+
+display:block;
+
+margin-top:15px;
+
+
+}
+
+
+
+
+.form-card input,
+.form-card select,
+.form-card textarea {
+
+
+width:100%;
+
+padding:14px;
+
+margin-top:8px;
+
+border:1px solid #ddd;
+
+border-radius:10px;
+
+font-size:15px;
+
+
+}
+
+
+
+.form-card textarea {
+
+
+resize:vertical;
+
+}
+
+
+
+.form-card button {
+
+
+margin-top:25px;
+
+width:100%;
+
+padding:15px;
+
+border:none;
+
+border-radius:30px;
+
+background:#F4C542;
+
+color:#111;
+
+font-size:17px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+
+}
+
+
+
+.form-card button:hover {
+
+
+background:#6EE7A5;
+
+
+}
+
+
+
+
+@media(max-width:900px){
+
+
+.consultation-section{
+
+grid-template-columns:1fr;
+
+padding:20px;
+
+}
+
+
+}
