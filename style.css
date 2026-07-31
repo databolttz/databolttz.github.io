@@ -2028,3 +2028,102 @@ color:#555;
 line-height:1.7;
 
 }
+/* SAME NAVIGATION ON ALL PAGES */
+
+.top-nav {
+
+position:relative;
+
+width:100%;
+
+background:#111;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:18px 40px;
+
+box-sizing:border-box;
+
+}
+
+
+.nav-logo {
+
+font-size:26px;
+
+font-weight:700;
+
+color:#f4c542;
+
+}
+
+
+.nav-links {
+
+display:flex;
+
+align-items:center;
+
+gap:25px;
+
+}
+
+
+.nav-links a {
+
+font-size:16px;
+
+color:white;
+
+text-decoration:none;
+
+font-weight:600;
+
+}
+
+
+.nav-links a:hover {
+
+color:#6ee7a5;
+
+}
+
+
+.nav-button {
+
+background:#f4c542;
+
+color:#111 !important;
+
+padding:12px 22px;
+
+border-radius:30px;
+
+}
+
+
+
+@media(max-width:900px){
+
+.top-nav{
+
+flex-direction:column;
+
+}
+
+
+.nav-links{
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+margin-top:15px;
+
+}
+
+}
