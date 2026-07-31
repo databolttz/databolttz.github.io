@@ -16,17 +16,25 @@ body {
 
     margin:0;
 
-    font-family:
-    'Inter',
-    'Segoe UI',
-    Arial,
-    sans-serif;
+    font-family:Arial, sans-serif;
 
-    color:#1f2937;
+    background:
+    radial-gradient(circle at top left,
+    rgba(11,61,145,0.12),
+    transparent 35%),
 
-    background:#f8fafc;
+    radial-gradient(circle at bottom right,
+    rgba(244,197,66,0.15),
+    transparent 35%),
 
-    line-height:1.6;
+    linear-gradient(
+    135deg,
+    #f8fafc,
+    #eef3f8
+    );
+
+
+    color:#111;
 
 }
 
@@ -2125,5 +2133,20 @@ justify-content:center;
 margin-top:15px;
 
 }
+
+}
+.page,
+.hub-section,
+.consultation-section,
+.training-section {
+
+    background:rgba(255,255,255,0.90);
+
+    backdrop-filter:blur(8px);
+
+    border-radius:25px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.08);
 
 }
