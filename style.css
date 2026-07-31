@@ -1336,14 +1336,17 @@ margin-bottom:15px;
 
 
 
-.research-hero h2 {
+.research-hero {
 
-font-weight:normal;
+max-width:1200px;
 
-font-size:24px;
+margin:40px auto;
+
+padding:80px 50px;
+
+border-radius:30px;
 
 }
-
 
 
 .hero-content p {
@@ -1464,14 +1467,19 @@ font-size:35px;
 
 .hub-section {
 
-max-width:1200px;
+max-width:1150px;
 
-margin:50px auto;
+margin:70px auto;
 
-padding:20px;
+padding:40px;
+
+background:white;
+
+border-radius:20px;
+
+box-shadow:0 5px 20px rgba(0,0,0,0.05);
 
 }
-
 
 
 .hub-section h2 {
@@ -2000,5 +2008,23 @@ body {
     padding:25px 15px;
 
 }
+
+}
+.resource-card,
+.opportunity-card,
+.featured-card {
+
+min-height:300px;
+
+}
+
+
+.resource-card p,
+.opportunity-card p,
+.featured-card p {
+
+color:#555;
+
+line-height:1.7;
 
 }
