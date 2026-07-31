@@ -1834,3 +1834,171 @@ grid-template-columns:1fr;
 }
 
 }
+/* ================================
+GLOBAL PAGE SPACING FIX
+================================ */
+
+body {
+    background:#f6f7f9;
+}
+
+
+/* Main page container */
+
+.page,
+.hub-section,
+.consultation-section,
+.training-section {
+
+    max-width:1200px;
+
+    margin:40px auto;
+
+    padding:40px 30px;
+
+}
+
+
+/* Prevent text touching edges */
+
+.page p,
+.page li,
+.hub-section p {
+
+    line-height:1.8;
+
+}
+
+
+/* Headings spacing */
+
+.page h1,
+.hub-section h1,
+.hub-section h2 {
+
+    margin-bottom:25px;
+
+}
+
+
+/* Navigation spacing */
+
+.top-nav {
+
+    padding-left:40px;
+    padding-right:40px;
+
+}
+
+
+
+/* Cards should not touch */
+
+.resource-grid,
+.opportunity-grid,
+.featured-grid {
+
+    padding:10px;
+
+}
+
+
+
+/* Mobile */
+
+@media(max-width:900px){
+
+.page,
+.hub-section,
+.consultation-section,
+.training-section {
+
+    padding:25px 15px;
+
+}
+
+}
+/* ================================
+GLOBAL PAGE SPACING FIX
+================================ */
+
+body {
+    background:#f6f7f9;
+}
+
+
+/* Main page container */
+
+.page,
+.hub-section,
+.consultation-section,
+.training-section {
+
+    max-width:1200px;
+
+    margin:40px auto;
+
+    padding:40px 30px;
+
+}
+
+
+/* Prevent text touching edges */
+
+.page p,
+.page li,
+.hub-section p {
+
+    line-height:1.8;
+
+}
+
+
+/* Headings spacing */
+
+.page h1,
+.hub-section h1,
+.hub-section h2 {
+
+    margin-bottom:25px;
+
+}
+
+
+/* Navigation spacing */
+
+.top-nav {
+
+    padding-left:40px;
+    padding-right:40px;
+
+}
+
+
+
+/* Cards should not touch */
+
+.resource-grid,
+.opportunity-grid,
+.featured-grid {
+
+    padding:10px;
+
+}
+
+
+
+/* Mobile */
+
+@media(max-width:900px){
+
+.page,
+.hub-section,
+.consultation-section,
+.training-section {
+
+    padding:25px 15px;
+
+}
+
+}
